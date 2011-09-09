@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.01pt}
+\select@language {finnish}
+\select@language {finnish}
+\beamer@sectionintoc {1}{Johdanto}{2}{0}{1}
+\beamer@sectionintoc {2}{Beamer}{4}{0}{2}
+\beamer@sectionintoc {3}{Loppu}{7}{0}{3}

@@ -1,0 +1,95 @@
+Keskitetty tunnistautuminen Ruby on Rails ohjelmistokehyksessä
+
+"sisältönä perusideat tutkimushypoteesista, käsittelytavasta ja työmenetelmistä
+lähdeluettelona muutama keskeisin lähde."
+
+
+KOVA YDIN: ilman valmista gradua ei ole vastausta kysymykseen "Miten keskitetty tunnistautuminen otetaan käyttöön, ettei tarvitse tehdä aina alusta uudelleen".  kun gradu on valmis, niin tämä kysymys poistuu maailmasta. ja pottis on valmistunut.
+
+
+
+Kuvaus:
+
+On ohjelmistoyritys X, joka toteuttaa hajautettuja palvelusuuntautuneita web-ohjelmistoja käyttäen Ruby on Rails ohjelmistokehystä.  Yrityksen ohjelmistoissa tunnistautuminen on toteutettu milloin milläkin.  Yritys haluaa selvittää miten tunnistautuminen voitaisiin keskittää blablblalab.
+
+
+Taustaa
+
+Tunnistautuminen voidaan toteuttaa joko
+
+1) Käyttäjävetoinen: ketäkö
+2) Palvelinvetoinen: mitäkö
+
+joista valitaan palvelinvetoinen, koska yrityksen x ongelmakenttä.
+
+
+Sitten kun ollaan sisällä palvelinvetoisuudessa, niin todetaan että siellä voidaan käyttää backendinä arkkitehtuurille:
+
+- LDAPPIA
+- SQL-tietokanta
+- REdiksellä
+- yhdistelmää kaikista?
+- Cerberosta
+- Höblböää
+
+Vertaillaan ja valitaan LDAP koska XYZ.
+
+
+Selvitettäväksi jää:
+
+ - Arkkitehtuurimalli (jos on supergyver ja datastore, niin mihin palvelimeen jne tulee ldap)
+ - 
+
+
+Työmenetelmät
+
+A
+- vaihtoehtoisten tunnistautumismallien toteuttaminen:
+  1) arkkitehtuurivaihtoehto 1: SOA
+  2) arkkitehtuurivaihtoehto 2: Rails-engine
+  3) arkkitehtuurivaihtoehto 3: joku muu
+
+ --> Valitaan toteutettavaksi vertailuun sopivat 2.
+
+B
+LDAP-skeemojen vertailu
+ - skeema jossa kaikki samssa puussa
+ - jossa ei samassa puussa etmssdf.d
+
+
+tulos1 = A:n voittaja + B:n voittaja
+tulos2 = A:n voittaja + B:n häviäjä JOSS ehdot x, y,z voimassa
+
+JA tulos == se, miten enemy voi tehdä softan.  eli jos sber lukee gradun niin se voi alkaa heti koodaamaan tätä.
+
+
+
+
+- Toteutusvaihtoehtojen vaihtoehtojen vertailu ja LDAP-skeemojen vertailu
+
+
+
+
+
+Lähteet
+
+
+Tunnistautumishärdelli -lähteet
+
+Sandhu, R. S., Samarati, P., Authentication, Access Control and Audit. 
+ACM Computing Surveys, Vol. 28, No. 1, March 1996, s. 241­243.
+6:05 PM
+
+
+LDAP -lähteet
+
+Wahl, M., Howes, T., Kille, S., Lightweight Directory Access Protocol (v3). 
+The Internet Society, RFC 2251, 1997.
+
+Howes, T. A., The Lightweight Directory Access Protocol: X.500 Lite. CITI 
+Technical Report 95–8, University of Michigan, 1995.
+
+
+Ruby on Rails -lähteet
+
+S.Ruby et al.  Agile Web development with rails, 4th edition.

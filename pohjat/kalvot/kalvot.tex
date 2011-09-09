@@ -1,0 +1,171 @@
+\documentclass[finnish,t,12pt,pdftex]{beamer}
+
+\usepackage[LY1]{fontenc}
+\usepackage{babel}
+\usepackage{helvet}
+\usepackage{times}
+\usepackage{courier}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{color}
+
+\usetheme[ml]{HY}
+
+\newcommand\kuva[2]{\includegraphics[scale=#1]{#2}}
+
+\newcommand\kuvasivu[4]{
+    \begin{minipage}[t]{#1\linewidth}
+        #4
+    \end{minipage}
+    \raisebox{-\height}[0pt][0pt]{
+        \includegraphics[width=#2\linewidth]{#3}
+    }
+}
+
+\newcommand\blue[1]{%
+    \textcolor{blue}{#1}%
+}
+
+\newcommand\red[1]{%
+    \textcolor{red}{#1}%
+}
+
+\newcommand\green[1]{%
+    \textcolor{green}{#1}%
+}
+
+\title{\LaTeX-kalvojen tekeminen}
+\author{Antti Leino \scriptsize \guilsinglleft{}antti.leino@cs.helsinki.fi\guilsinglright{}}
+\institute{Tietojenkäsittelytieteen laitos}
+\date{\today}
+
+\begin{document}
+
+\selectlanguage{finnish}
+
+\HyTitle
+
+
+\section{Johdanto}
+
+\begin{frame}
+    \frametitle{Mikä on kalvo?}
+    \framesubtitle{}
+
+    \begin{itemize}
+      \item Puhutun esityksen havainnollistaja
+
+        \bigskip
+      \item Alkuaan piirtoheittimellä
+        \begin{itemize}
+          \item muovikalvo (siitä nimi)
+          \item teksti ja kuvitus tusseilla
+        \end{itemize}
+
+        \bigskip
+      \item Nykyisin tietokoneella
+        \begin{itemize}
+          \item näytetään projektorilla
+          \item tehdään erilaisilla ohjelmilla
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Mikä on kalvo}
+    \framesubtitle{ja millä semmoisia tehdään?}
+
+    \begin{itemize}
+      \item Tietokoneella tehtyä esitysgrafiikkaa
+
+        \bigskip
+      \item PowerPoint
+        \begin{itemize}
+          \item Micro\$oft-tuote
+          \item toimii -- melko varmasti ainakin Windows-ympäristössä
+        \end{itemize}
+
+        \bigskip
+      \item PDF
+        \begin{itemize}
+          \item toimii jotakuinkin ympäristössä kuin ympäristössä
+          \item tekemiseen erilaisia työkaluja
+          \item tässä \LaTeX{} ja sen Beamer-paketti
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\section{Beamer}
+
+\begin{frame}
+    \frametitle{Beamer?}
+    \framesubtitle{}
+
+    \begin{itemize}
+      \item \LaTeX-makropaketti kalvojen tekoon
+
+        \bigskip
+      \item Paljon virittämisen varaa
+        \begin{itemize}
+          \item mikä tässä nyt oli uutta?
+        \end{itemize}
+
+        \bigskip
+      \item Tässä teema \texttt{HY}
+        \begin{itemize}
+          \item yliopiston virallisen kalvopohjan näköinen
+        \end{itemize}
+
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{HY-Beamer}
+    \framesubtitle{Käyttö}
+
+    \begin{itemize}
+      \item Käyttöesimerkkinä tämän kalvosetin lähdekoodi
+
+        \bigskip
+      \item Hyödyllisiä \texttt{HY}-teeman optioita
+        \begin{itemize}
+          \item \texttt{sinetti} -- opintokirjaroviotunnuksen sijasta
+            yliopiston sinetti
+          \item \texttt{ml} -- yliopiston sinisen perusvärityksen
+            sijasta ML-tiedekunnan oranssi
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{HY-Beamer}
+    \framesubtitle{Kirjaimet}
+
+    \begin{itemize}
+        \bigskip
+      \item Beamer ei ota kantaa kirjaimiin
+
+        \bigskip
+      \item Tässä otettu perus-PS-kirjainperheet \textsf{Helvetica},
+        \textrm{Times} ja \texttt{Courier} (myös matematiikkaan:
+        $\sum_{i=1}^{64}\mathsf{log}(i+i^2)$)
+
+        \bigskip
+      \item Yliopiston käytäntö: kalvojen teksti pääteviivatonta
+        (virallisesti Frutiger, suositeltuja korvikkeita Arial ja
+        Helvetica)
+    \end{itemize}
+\end{frame}
+
+
+\section{Loppu}
+
+\begin{frame}
+    \frametitle{Kokeile itse!}
+    \framesubtitle{}
+
+    \kuva{.4}{gen-hy-cs.png}
+\end{frame}
+
+\end{document}
