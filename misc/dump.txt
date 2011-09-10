@@ -1,0 +1,23 @@
+10.9.:
+
+Ajatus: 
+Devisen koodaus ei kuulosta hyvältä, joku valmis rajapinta löydettävä
+--> oauth
+--> railsissa omniauth
+
+----> Oauth rajapinta, jonka takana ldap. Login devisellä kuten facebook/lindedin/openid
+
+https://github.com/plataformatec/devise/wiki/OmniAuth%3A-Overview
+http://blog.railsrumble.com/blog/2010/10/08/intridea-omniauth
+https://github.com/intridea/omniauth
+https://github.com/intridea/omniauth/wiki/LDAP-Authentication
+
+
+
+Googlen "cloud directory" projekti:
+https://sites.google.com/site/clouddir/
+
+- Tämä summaa koko tutkimusasettelun? 
+
+Tästä eteenpäin:
+https://sites.google.com/site/clouddir/references
