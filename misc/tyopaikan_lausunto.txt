@@ -1,0 +1,25 @@
+Työnantajan lausunto pro gradu -tutkielmasta
+
+Keskitetty tunnistautuminen Ruby on Rails -ohjelmistokehyksellä toteutetuissa ohjelmistoissa
+
+Olli Jokinen
+
+Yritys:
+
+Enemy & Sons Oy
+Vuorikatu 15 A
+00100 Helsinki
+
+Enemy & Sons Oy on vaativia web-sovelluksia tekevä yritys, jonka erikoisosaamista ovat palvelusuuntautuneet arkkitehtuurit, ketterät kehitysmenetelmät ja mobiilit ratkaisut. Yritys työllistää täysipäiväisesti 7 henkilöä. Toimitilamme sijaitsevat Kaisaniemessä, jossa kaikki yrityksen toiminta tapahtuu.
+
+Asiakasprojekteissamme nousee jatkuvasti esille tarve integroitua ja keskittää tunnistautuminen ja autorisointi siten, että eri päätelaitteet ja palvelukomponentit voivat hyödyntää keskitetysti ylläpidettyä tunnistautumispalvelua. Koska projekteissamme käytettävät teknologiat (mm. Ruby on Rails, JavaScript) poikkeavat huomattavasti toisistaan, yhtä oikeaa teknologiavalintaa ei voi tehdä.
+
+Pro-gradu tutkielmassa "Keskitetty tunnistautuminen Ruby on Rails -ohjelmistokehyksellä toteutetuissa ohjelmistoissa" on tarkoitus selvittää, miten useat eri toimijat ja organisaatiot voisivat hyödyntää keskitettyä tunnistautumista heterogeenisessä ympäristössä. Tavoitteena on suunnitella ja osittain toteuttaa palvelu, joka hallitsee keskitetysti käyttäjät ja näiden oikeudet (oletuksena LDAP) ja jota on mahdollista laajentaa eri rajapinnoilla, joita vasten eri toimijat tunnistautuvat.
+
+Tälläistä, nykyaikaisia rajapintoja tukevaa palvelua ei ole saatavilla valmiina komponenttina (closed/open source). Rajapinnat, jotka palvelun pitäisi toteuttaa (HTTP-REST/JSON) ovat huomattavan uusia ja oikea toteutus on varmasti haastava ja tutkimuksellisesti merkittävä. Työn lopputulemana suunniteltu palvelu on merkittävä yritykselle, sillä tarvitsemme kaikissa projekteissa tunnistautumisen hallintaa.
+
+Tutkielman tekijä työskentelee yrityksessä ja käyttää tutkimusongelman ratkaisemiseen asiakasprojektissa aikaa n. 20h/viikossa. Tutkielman tekijää ohjaa työpaikalla Matti Paksula (hallituksen puheenjohtaja, projektipäällikkö).
+
+Tutkielman tarkoituksena on tuottaa suunnitelma, jonka avulla yritys pystyy toteuttamaan tunnistautumisen kyseisen asiakasprojektin lisäksi myös yrityksen muissa projekteissa. Työ julkaistaan avoimena lähdekoodina.
+
+Työtä voidaan käyttää pro graduna ja Enemy & Sons Oy hyväksyy tutkielman arkistoimisen laitoksen kirjastoon. Työn kieli on vapaa.
