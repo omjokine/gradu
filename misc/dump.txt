@@ -1,6 +1,6 @@
 10.9.:
 
-Ajatus: 
+Ajatus:
 Devisen koodaus ei kuulosta hyvältä, joku valmis rajapinta löydettävä
 --> oauth
 --> railsissa omniauth
@@ -17,7 +17,7 @@ https://github.com/intridea/omniauth/wiki/LDAP-Authentication
 Googlen "cloud directory" projekti:
 https://sites.google.com/site/clouddir/
 
-- Tämä summaa koko tutkimusasettelun? 
+- Tämä summaa koko tutkimusasettelun?
 
 Tästä eteenpäin:
 https://sites.google.com/site/clouddir/references
@@ -29,3 +29,35 @@ http://www.readwriteweb.com/cloud/2011/08/okta-has-new-cloud-active-dire.php
 Parempi:
 http://www.simplecloud.info/
 http://code.google.com/p/scim/
+
+---------------------------------------------------------------------------------------------------------
+
+24.9:
+
+https://github.com/omjokine/oauth-plugin
+https://github.com/omjokine/rack-oauth2-server
+- löytyy myös activerecord-versio, mutta mongo on varmaan ok? (https://github.com/trumant/rack-oauth2-server-active-record)
+https://github.com/flowtown/rack-oauth2-server/issues/22
+
+Kumpaako tässä täytyisi käyttää? rack-oauth2-server?
+
+Plan:
+- LDAP esille gradussa, mutta toteutus jää puuttumaan. LDAP mukaan ajatuksena, että välipalikka voisi
+putkittaa autentikoinnin suoraan LDAP-serveriin. Lähinnä tärkeää osoittaa, että ajatus toimii, ei koodata
+valmista palikkaa (vaikka tehtävänanto saattaa jotain muuta sanoa, mutta sen voi uusia).
+
+Pitäiskö alkaa tekoprosessi kirjoittamalla oauthista? Pitäiskö tehdä koko gradu pelkästään siitä?
+
+Sisällysluettelo:
+1. johdanto
+2. ongelmakenttä
+2.1. miks on perseestä, että on n clientia jotka autentikoi esim ldapiin
+2.2. nelikenttä
+3. teknisiä termejä
+3.1. oauth
+3.1.1. oauth versio 2
+3.2. ldap
+3.3. ruby on rails?
+4. toteutus
+5. toteutuksen validointi ja johtopäätökset
+6. yhteenveto
