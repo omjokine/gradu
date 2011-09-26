@@ -1,0 +1,1 @@
+../pohjat/tktltiki/tktltiki.cls
