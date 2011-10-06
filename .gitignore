@@ -1,3 +1,5 @@
 teksti/*.pdf
 teksti/*.dvi
 teksti/*.log
+teksti/*.toc
+teksti/*.aux
