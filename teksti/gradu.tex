@@ -1,7 +1,7 @@
 \documentclass{tktltiki}
 \usepackage{url}
 \begin{document}
-\title{Keskitetty tunnistautuminen Ruby on Rails -ohjelmistokehyksessä}
+\title{Keskitetty tunnistautuminen hajautetuissa järjestelmissä OAuth-protokollalla}
 \author{Olli Jokinen}
 \date{\today}
 \level{Pro gradu -tutkielma}
@@ -24,9 +24,24 @@ I.7.m [Document and Text Processing]: Miscellaneous}
 \section{Johdanto}
 \input{johdanto}
 \section{Ongelmakenttä}
+\subsection{Käyttötapauksia}
+\subsection{Miksi vehje?}
+kuva soa-palvelusta (abstraktoinnin tarve)
 \section{Teknologiat}
-\subsection{LDAP}
-\subsection{OAuth}
+\subsection{Käyttäjädata}
+ldap
+passwd
+tietokanta
+-> abstraktio
+\subsection{Vaihtoehdot vehkeelle}
+\subsubsection{Kerberos}
+\input{kerberos}
+\subsubsection{SAML}
+\input{saml}
+\subsubsection{OAuth}
+\input{oauth}
+\subsection{Miksi OAuth?}
+\subsection{Johtopäätös}
 \input{oauth}
 \section{Toteutus}
 \section{Toteutuksen evaluaatio}
