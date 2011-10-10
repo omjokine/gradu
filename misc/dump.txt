@@ -61,3 +61,12 @@ Sisällysluettelo:
 4. toteutus
 5. toteutuksen validointi ja johtopäätökset
 6. yhteenveto
+
+
+-----------------------oOOooOOooOooOOOoOO-------------------------------------------------------------
+
+10.10.
+
+http://blog.joshsoftware.com/2010/12/16/multiple-applications-with-devise-omniauth-and-single-sign-on/
+
+- valmis toteutus, tee tän pohjalta oma
