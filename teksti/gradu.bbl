@@ -1,0 +1,43 @@
+\begin{thebibliography}{SBHB10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\input babelbst.tex
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[Cao11]{secure_secret_key}
+Cao, L.-C., Secure secret-key management of kerberos service.
+\newblock \capitalize\bblin{} {\em Emerging Research in Artificial Intelligence
+  and Computational Intelligence}, Deng, H., Miao, D., Wang, F.~L. \bbland{}
+  Lei, J., \bbleditors{}, \bblvolume{} 237 \bblof{} {\em Communications in
+  Computer and Information Science}, Springer Berlin Heidelberg, 2011,
+  \bblpages{} 76--83,
+  \urlprefix\url{http://dx.doi.org/10.1007/978-3-642-24282-3_11}.
+
+\bibitem[FH07]{password_habits}
+Florencio, D. \bbland{} Herley, C., A large-scale study of web password habits.
+\newblock  {\em Proceedings of the 16th international conference on World Wide
+  Web}, WWW '07, New York, NY, USA, 2007, ACM, \bblpages{} 657--666,
+  \urlprefix\url{http://doi.acm.org/10.1145/1242572.1242661}.
+
+\bibitem[LC10]{enchancing_distributed_web_security}
+Lai-Cheng, C., Enhancing distributed web security based on kerberos
+  authentication service.
+\newblock  {\em Proceedings of the 2010 international conference on Web
+  information systems and mining}, WISM'10, Berlin, Heidelberg, 2010,
+  Springer-Verlag, \bblpages{} 171--178,
+  \urlprefix\url{http://dl.acm.org/citation.cfm?id=1927661.1927689}.
+
+\bibitem[Lyn11]{inside_the_identity_management_game}
+Lynch, L., Inside the identity management game.
+\newblock {\em Internet Computing, IEEE}, 15,5(2011), \bblpages{} 78 --82.
+
+\bibitem[SBHB10]{billion_keys}
+Sun, S.-T., Boshmaf, Y., Hawkey, K. \bbland{} Beznosov, K., A billion keys, but
+  few locks: the crisis of web single sign-on.
+\newblock  {\em Proceedings of the 2010 workshop on New security paradigms},
+  NSPW '10, New York, NY, USA, 2010, ACM, \bblpages{} 61--72,
+  \urlprefix\url{http://doi.acm.org/10.1145/1900546.1900556}.
+
+\end{thebibliography}
