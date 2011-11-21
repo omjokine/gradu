@@ -1,0 +1,32 @@
+Käytännössä kaksi ryhmää teknologioille: käyttäjädatan tallennus ja tunnistautumisprotokollat.
+
+Käyttäjädatan tallennus
+- passwd (ts tiedosto levyllä tms)
+- tietokanta
+- AD-kannat (LDAP)
+
+---> käyttäjän datan abstraktoinnin tarve, ehkä mainita, että käyttäjädatan backendejä voi käytännössä olla monta erilaista. Esim. LDAP:n rinnalla tietokannat.
+
+Enivei, luvun pääpaino on protokollissa. Esitellään historia kerberos -> saml -> oauth ja päädytään oauthiin, tarkemmin versioon 2.
+
+\input{teknologiat/johdanto}
+\subsection{Käyttäjädata}
+\input{teknologiat/kayttajadata/johdanto}
+\subsubsection{passwd}
+\input{teknologiat/kayttajadata/passwd}
+\subsubsection{Relaatiotietokannat}
+\input{teknologiat/kayttajadata/db}
+\subsubsection{LDAP}
+\input{teknologiat/kayttajadata/ldap}
+\subsubsection{Käyttäjädatan abstraktointi}
+\input{teknologiat/kayttajadata/abstraktointi}
+\subsection{Rajapintaprotokollat}
+\input{teknologiat/protokollat/johdanto}
+\subsubsection{Kerberos}
+\input{teknologiat/protokollat/kerberos}
+\subsubsection{SAML}
+\input{teknologiat/protokollat/saml}
+\subsubsection{OAuth}
+\input{teknologiat/protokollat/oauth}
+\subsection{Vertailu (rajapinnat ja käyttäjädata)}
+\input{teknologiat/yhteenveto}
