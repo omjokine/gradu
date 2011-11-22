@@ -40,4 +40,9 @@ Sun, S.-T., Boshmaf, Y., Hawkey, K. \bbland{} Beznosov, K., A billion keys, but
   NSPW '10, New York, NY, USA, 2010, ACM, \bblpages{} 61--72,
   \urlprefix\url{http://doi.acm.org/10.1145/1900546.1900556}.
 
+\bibitem[SS96]{sandhu}
+Sandhu, R. \bbland{} Samarati, P., Authentication, access control, and audit.
+\newblock {\em ACM Comput. Surv.}, 28, \bblpages{} 241--243.
+\newblock \urlprefix\url{http://doi.acm.org/10.1145/234313.234412}.
+
 \end{thebibliography}
