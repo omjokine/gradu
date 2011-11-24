@@ -3,3 +3,6 @@ teksti/*.dvi
 teksti/*.log
 teksti/*.toc
 teksti/*.aux
+teksti/*.bbl
+teksti/*.blg
+
