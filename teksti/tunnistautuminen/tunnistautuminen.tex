@@ -1,6 +1,17 @@
+Miten tunnistetaan perinteisesti?
+
+Käyttäjädatan tallennus
+- passwd (ts tiedosto levyllä tms)
+- tietokanta
+- AD-kannat (LDAP)
+
+---> käyttäjän datan abstraktoinnin tarve, ehkä mainita, että käyttäjädatan backendejä voi käytännössä olla monta erilaista. Esim. LDAP:n rinnalla tietokannat.
+
 \input{tunnistautuminen/johdanto}
 \subsection{Ympäristön kuvaus}
 \input{tunnistautuminen/ymparisto}
+\subsection{Käyttötapauksia}
+\input{tunnistautuminen/kayttotapaukset}
 \subsection{Käyttäjädata}
 \input{web/kayttajadata/johdanto}
 \subsubsection{passwd}
@@ -11,7 +22,5 @@
 \input{web/kayttajadata/ldap}
 \subsubsection{Käyttäjädatan abstraktointi}
 \input{web/kayttajadata/abstraktointi}
-\subsection{Käyttötapauksia}
-\input{tunnistautuminen/kayttotapaukset}
 \subsection{Yhteenveto}
 \input{tunnistautuminen/yhteenveto}
