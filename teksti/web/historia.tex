@@ -1,0 +1,3 @@
+tässä kai voisi kertoa kehityksen perus server-client moskasta kohti javascriptillä toteutettavia DOM-virityksiä
+
+Erityisesti tärkeää kertoa, että käyttöliittymä ja data erotetaan toisistaan: käyttöliittymä rakennetaan javascriptillä (tai flashilla, silverlightilla whatever) ja erilliset palvelut tarjoavat sitten json/xml-dataa, jota tuo käyttöliittymä visualisoi. Gradun ongelma onkin juuri tässä: miten toteuttaa käyttöliittymä, jossa javascript hakee dataa erilaisista datalähteistä ja käyttäjä pystytään tunnistamaan näissä eri datalähteissä. Tuskin tämä kuuluu web-palveluiden historia-kappaleeseen, mutta tämän kappaleen tarkoitus on kertoa lukijalle, että tällaisia ne web-palvelut nykyään on. Eli n-tier on tässä nyt jotenkin läsnä.
