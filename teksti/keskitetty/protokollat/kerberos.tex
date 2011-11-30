@@ -1,9 +1,12 @@
 Lähteet:
-Enhancing Distributed Web Security Based on Kerberos Authentication Service (\cite{enchancing_distributed_web_security})\\
-Secure Secret-Key Management of Kerberos Service (\cite{secure_secret_key})\\
-TODO: rfc-lähteet kuntoon
+Enhancing Distributed Web Security Based on Kerberos Authentication Service \cite{enchancing_distributed_web_security}\\
+Secure Secret-Key Management of Kerberos Service \cite{secure_secret_key}\\
+RFC4120 \cite{rfc4120}\\
+RFC3244 \cite{rfc3244}
 
-Kerberos-protokolla on alunperin MIT:ssa kehitetty tunnistautumisprotokolla, jonka nykyisin käytössä oleva versio 5 julkaistiin alunperin syyskuussa 1993 ja päivitettynä heinäkuussa 2005 [RFC4120]. Se on yleisesti käytössä erilaisissa UNIX-pohjaisissa käyttöjärjestelmissä ja myös Microsoft on käyttänyt sitä oletus-tunnistautumismekanismina Windows 2000:sta lähtien [RFC3244].
+Pituus max sivu, luultavasti tästäkin jotain asioita periaate-kappaleen puolelle.
+
+Kerberos-protokolla on alunperin MIT:ssa kehitetty tunnistautumisprotokolla, jonka nykyisin käytössä oleva versio 5 julkaistiin alunperin syyskuussa 1993 ja päivitettynä heinäkuussa 2005 \cite{rfc4120}. Se on yleisesti käytössä erilaisissa UNIX-pohjaisissa käyttöjärjestelmissä ja myös Microsoft on käyttänyt sitä oletus-tunnistautumismekanismina Windows 2000:sta lähtien \cite{rfc3244}.
 
 Protokollan osapuolia ovat käyttäjä, luotettava kolmas osapuoli ja palvelu, joka vaatii tunnistautumisen. Luotettava kolmas osapuoli on tyypillisesti avaintenjakopalvelin (KDC, Key Distribution Center), joka tunnistaa käyttäjän ja myöntää lipun tunnistautuneelle käyttäjälle. Myönnettyyn lippuun on merkattu palvelu, johon sitä voidaan käyttää ja aikaleima, jonka ajan se on voimassa. Käyttäjä antaa lipun tunnistautumista vaativalle palvelimelle, joka tarkistaa omalla avaimellaan käyttäjän tunnisteen ja aikaleiman, joiden perusteella se myöntää pääsyn palveluun.
 

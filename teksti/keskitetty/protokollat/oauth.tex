@@ -1,6 +1,11 @@
+Lähteet: \\
+2.0 draft: http://tools.ietf.org/html/draft-ietf-oauth-v2-22 \cite{oauth2_0}
+
+Tämä kappale tulee luultavasti muuttumaan, yleisiä juttuja johdantoon ja tähän vain Oauth-spesifistä asiaa, miten eroaa kerberoksesta jne. Pituus 2-3 sivua, kuvia yms. Oleellisin näistä protokollista, koska tullaan käyttämään toteutuksessa.
+
 OAuth on avoin tunnistautumisrajapinta hajautetuille web-sovelluksille. Se mahdollistaa käyttäjien resurssien jakamisen palveluiden välillä ilman käyttäjätunnuksen tai salasanan luovuttamista kolmannelle osapuolelle. Se perustuu erilaisten valtuutusavainten (token) välittämiseen palveluiden välillä. OAuth on yleisesti käytössä web-sovelluksissa, joissa halutaan näyttää käyttäjälle kuuluvia resursseja (esimerkiksi valokuvia), jotka sijaitsevat toisessa sovelluksessa [TODO: lähde].
 
-OAuth on määritelty RFC-dokumentissa numero 5849. Sen ensimmäinen versio (1.0) julkaistiin lokakuussa 2007 ja päivitetty versio (1.0a) kesäkuussa 2009 [TODO: viite RFC-dokkariin]. OAuthin versio 2.0 on myös kehitteillä ja se on tarkoitus julkaista marraskuussa 2012 [TODO: viite Oauth 2.0 draft].
+OAuth on määritelty RFC-dokumentissa numero 5849. Sen ensimmäinen versio (1.0) julkaistiin lokakuussa 2007 ja päivitetty versio (1.0a) kesäkuussa 2009 \cite{oauth2_0}. OAuthin versio 2.0 on myös kehitteillä ja se on tarkoitus julkaista marraskuussa 2012 \cite{oauth2_0}.
 
 Alunperin OAuthin kehitystyö alkoi marraskuussa 2006, kun Blaine Cook kehitty Twitter-palveluun OpenID-tukea.
 
@@ -19,7 +24,3 @@ Alunperin OAuthin kehitystyö alkoi marraskuussa 2006, kun Blaine Cook kehitty T
 
   \item[Valtuutusavain (token)] - Palvelimelta saatava yksilöivä tunniste, jonka avulla asiakas voi pyytää resurssin omistajalta suojattua resurssia. TODO: yeah?
 \end{description}
-
-OAuth 2.0:n on mahdollista tarjota Kerberos-yhteensopivuus. Kerberos taas ei tarjoa OAuth-yhteensopivuutta, joten OAuth > Kerberos.
-
-http://tools.ietf.org/html/draft-hardjono-oauth-kerberos-01
