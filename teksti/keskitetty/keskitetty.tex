@@ -1,17 +1,25 @@
-Esitellään mitä tarkoitetaan hajautetulla järjestelmällä (SOA) ja esitellään hajautettuihin järjestelmiin suunniteltuja protokollia, aikajärjestyksessä  kerberos -> saml -> oauth ja päädytään oauthiin, tarkemmin versioon 2.
+Esitellään palveluperustaisten web-sovellusten tunnistautumisen ongelmakenttää ja esitellään niihin suunniteltuja protokollia, aikajärjestyksessä kerberos -> saml -> oauth ja päädytään oauthiin, tarkemmin versioon 2.
+
+Kappaleessa vedetään yhteen kappaleissa 2 ja 3 esiteltyjä perusjuttuja ja avataan nykyaikaisiin hajautettuihin web-sovelluksiin liittyviä tunnistautumisongelmia. Ratkaisuksi tarjotaan erilaisia protokollia ja tehdään niistä vertailua.
+
+Pituus n. 10 sivua. Tämä on alkupään kappaleista oleellisin, koska tässä oikeasti pureudutaan ongelmaan, joka yrityksellä on.
 
 Lähteitä:\\
 A billion keys, but few locks: the crisis of web single sign-on \cite{billion_keys}\\
 A large-scale study of web password habits \cite{password_habits}
+
+-----------------------------------------------------------------------------------------------------------
 
 \input{keskitetty/johdanto}
 \subsection{Ongelmakenttä}
 \input{keskitetty/ongelmakentta}
 \subsection{Ympäristö}
 \input{keskitetty/ymparisto}
-\subsection{Tunnistaumisen periaatteet}
+\subsection{Käyttötapauksia}
+\input{keskitetty/kayttotapaukset}
+\subsection{Keskitetyn tunnistaumisen periaatteet}
 \input{keskitetty/periaatteet}
-\subsection{Tunnistautumisen rajapintaprotokollat}
+\subsection{Keskitetyn tunnistautumisen rajapintaprotokollat}
 \input{keskitetty/protokollat/johdanto}
 \subsubsection{Kerberos}
 \input{keskitetty/protokollat/kerberos}
