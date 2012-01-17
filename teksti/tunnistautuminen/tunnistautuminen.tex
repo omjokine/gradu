@@ -1,23 +1,6 @@
-Miten tunnistetaan perinteisesti?
-
-Käyttäjädatan tallennus
-- passwd (ts tiedosto levyllä tms)
-- tietokanta
-- AD-kannat (LDAP)
-
----> käyttäjän datan abstraktoinnin tarve, ehkä mainita, että käyttäjädatan backendejä voi käytännössä olla monta erilaista. Esim. LDAP:n rinnalla tietokannat.
-
-Pituus n. 5 sivua.
-
 Lähteitä:\\
 A Guide to Computer Network Security \cite{authentication}\\
 Authentication in distributed systems: theory and practice \cite{lampson}
-
-LDAP:
-
-Howes, T. A., The Lightweight Directory Access Protocol: X.500 Lite. CITI
-Technical Report 95–8, University of Michigan, 1995. \cite{howes} \\
-rfc:t 4510-4513 (ainakin 4513 "Authentication Methods and Security Mechanisms" kiinnostaa)
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -26,15 +9,7 @@ rfc:t 4510-4513 (ainakin 4513 "Authentication Methods and Security Mechanisms" k
 \input{tunnistautuminen/kasitteet}
 \subsection{Ympäristön kuvaus}
 \input{tunnistautuminen/ymparisto}
-\subsection{Käyttäjädata}
-\input{tunnistautuminen/kayttajadata/johdanto}
-\subsubsection{passwd}
-\input{tunnistautuminen/kayttajadata/passwd}
-\subsubsection{Relaatiotietokannat}
-\input{tunnistautuminen/kayttajadata/db}
-\subsubsection{LDAP}
-\input{tunnistautuminen/kayttajadata/ldap}
-\subsubsection{Käyttäjädatan abstraktointi}
-\input{tunnistautuminen/kayttajadata/abstraktointi}
+\subsection{Keskitetty tunnistautuminen}
+\input{tunnistautuminen/keskitetty}
 \subsection{Yhteenveto}
 \input{tunnistautuminen/yhteenveto}
