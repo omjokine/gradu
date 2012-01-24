@@ -1,7 +1,3 @@
-Tunnistautumispalvelimella ja yksittäisellä sovelluksella on joku yhteinen salaisuus (yksityinen ja julkinen avain), jonka avulla tunnistautumispalvelin allekirjoittaa valtuutuksia (token), jolla käyttäjä voi todistaa identiteettinsä. Tähän periaatteeseen perustuvia protokollia on ainakin OAuth ja Kerberos, varmaan SAML:ssa on joku vastaava meininki.
+Tunnistautumispalvelimella ja yksittäisellä sovelluksella on joku yhteinen salaisuus (yksityinen ja julkinen avain), jonka avulla tunnistautumispalvelin allekirjoittaa valtuutuksia (token), jolla käyttäjä voi todistaa identiteettinsä. Tähän periaatteeseen perustuvia protokollia on ainakin OAuth ja SAML. Kerberos oli tässä alunperin mukana, mutta kyseessä on matalamman tason protokolla. Ehkä sen voisi mainita? Tunnistautumispalikka voi nimittäin olla yhteydessä LDAP:in esim Kerberoksella, vaikka rajapinta käyttäjälle on OAuth (tai SAML).
 
 Joku kiva kuva (sekvenssikaavio?), joka visualisoi asian.
-
-Ehkä termikappalekin, johon voi siirtää yleisiä termejä kerberos ja oauth-kappaleista.
-
-Lähteenä voi käyttää vaikka luottettavaakin luotettavampaa Lampsonia \& kumppaneita, joka ehkä on kuitenkin jo vähän legacya \cite{lampson}.
