@@ -70,3 +70,31 @@ Sisällysluettelo:
 http://blog.joshsoftware.com/2010/12/16/multiple-applications-with-devise-omniauth-and-single-sign-on/
 
 - valmis toteutus, tee tän pohjalta oma
+
+----------------------------------------
+
+31.1.
+
+2. lukuun rest mukaan??? -> arkkitehtuuriharkka
+  - helpottais saml vs oauth perustelua?
+
+loppugradu: ???
+5. käyttäjänhallinta
+  -> mitä sit kun tulee login-formiin
+  - vaihtoehdot: ldap, tietokanta
+6. prototyyppi
+  esim articles ja toinen rails-projekti. käyttävät "samaa
+  käyttäjätietokantaa" ja pilkotaan tietokanta omaksi
+  projektiksi ja rails-projektit käyttämään sitä. ei
+  tarvita välttämättä edes toista projektia, motivaatioksi
+  riittää että nyt sen toisen vois sitten tehdä
+7. prototyypin puutteet ja parannusehdotukset
+  - kertakirjautuminen 
+    * tuleeko tämä ilmaiseksi, jolloin teoria 2 lukuun?
+  - web-palveluiden välinen resurssien pääsynvalvonta. 
+    esim. artikkeli-tietokanta haluaa päästä käsiksi
+    pdf-tietokantaan tms, pitää hahmotella joku järkevä
+8. johtopäätökset ja yhteenveto
+
+-> tulisi suht teoriapainotteinen (-> mitä väliä???)
+-> 5. kappale pois, suoraan prototyyppiin? �pakko olla?
