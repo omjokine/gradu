@@ -1,3 +1,16 @@
+Palveluperustaisten arkkitehtuurien myötä organisaation sisällä saattaa olla useita web-palveluita, jotka haluavat myös tunnistaa käyttäjän. Tässä luvussa pureudutaan tähän liittyvään ongelmakenttään. Vaikka web-sovellusten määrä järjestelmässä kasvaa, halutaan käyttäjien tunnistetiedot pitää keskitettynä, jotta vältytään erilaisilta tietoturva- ja synkronointiongelmilta.
+
+Organisaatioiden sisäisissä palveluissa Facebookin tai LinkedInin kaltaisten palveluiden käyttö ei välttämättä tule kysymykseen. Intranet-järjestelmien ylläpitäjät eivät mahdollisesti halua siirtää käyttäjähallintaansa ulkopuolisen yrityksen haltuun, vaan olemassaolevia hallintajärjestelmiä halutaan käyttää. Seuraavassa luvussa käydään läpi ongelmia, joita nykyisten käyttäjähallintajärjestelmien integrointi palvelusuuntautuneisiin arkkitehtuureihin tuottaa ja esitetään ratkaisuksi keskitettyä tunnistautumispalvelua.
+
+
+
+
+
+Tämän tutkielman kannalta tunnistamisen luotettavuus ei ole teknisiä yksityiskohdat eivät ole merkityksellisiä, vaan ne ovat tunnistautumispalvelun toteutukseen yksityiskohtia. Tunnistautumispalveluun liitetyn web-sovelluksen täytyy luottaa siihen, että käyttäjät tunnistetaan luotettavasti.
+
+
+
+
 Keskitetyn tunnistautumisen tarkoituksena on tarjota palvelu, jota vasten käyttäjä voidaan tunnistaa erillisestä web-palvelusta ilman uuden identiteetin luontia. Tunnistautumispalvelun ja sitä käyttävien web-palveluiden välillä on luottamussuhde, jolloin web-palveluun ei tarvitse luoda omaa käyttäjille tunnistautumistietoja (käyttäjätunnus/salasana), vaan se voi luottaa tunnistautumispalvelun tunnistamiin käyttäjiin.
 
 Tunnistautumispalvelulla parannetaan järjestelmien tietoturvaa ja tunnistautumisen luotettavuutta. Käyttäjät valitsevat vahvempia salasanoja palveluihin, jotka he kokeavat tärkeiksi, kuten sähköpostiin, verrattuna vähemmän tärkeisiin web-palveluihin \cite{password_habits}. Keskitetyssä palvelussa käyttäjän tunnistautumisen luotettavuutta voidaan parantaa esimerkiksi vaatimalla normaalia web-palvelua vahvempia salasanoja. Käyttäjien todennusta voidaan vahvistaa myös lisävarmistuksilla, kuten erilaisilla tunnuslukulistoilla tai puhelimen kautta tehtävällä todennuksella. Käyttäjä ei tarvitse organisaation jokaiseen järjestelmään eri tunnistautumistietoja, vaan yksi riittää koko organisaation laajuudessa.
