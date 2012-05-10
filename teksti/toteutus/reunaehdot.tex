@@ -1,4 +1,7 @@
-- yleisesti tuettu teknologia, eli käytännössä OAuth, OpenID, SAML... erityisesti python-tuki tärkeää. reunalla voidaan siis olla, kunhan ainakin tuettu python-kirjasto löytyy
-- täytyy tukea myös komentorivityökaluja, joten pelkkä user-agent flow ei riitä. Tämä supistanee vaihtoehdot OAuthiin ja SAML:in, OpenID on jotain muuta?
-- eri tasoisia käyttäjiä, joten pelkkä autentikoituminen ei riitä, vaan täytyy myös pystyä passaamaan käyttäjän attribuutteja
-- koodia halutaan muuttaa mahdollisimman vähän nykyisissä softissa
+Sikteeri on toteutettu Python-ohjelmointikielen Django-kehystä käyttäen. Ylläpidon helpottamiseksi myös järjestelmän uudet ydinkomponentit halutaan toteuttaa Pythonilla. Toteutuksessa halutaan käyttää mahdollisimman paljon avoimen lähdekoodin alaista koodia, joten tunnistautumispalvelussa käytetystä protokollasta täytyy olla Python-kielellä toteutettu ratkaisu. Toisaalta järjestelmän sisällä ei haluta sulkea muiden ohjelmointikielten tai -kehysten käyttöä pois, joten pelkästään Python-kielinen ratkaisu ei riitä, vaan standardejen täytyy olla avoimia ja käytettävissä myös Javan web-kehyksillä tai esimerkiksi Ruby on Rails -ohjelmointikehyksellä.
+
+Tunnistautumispalvelun täytyy tukea myös komentorivityökaluja, kuten nykyistä admtoolia. Tällöin pelkkä käyttäjäagentti-pohjainen tunnistautumismenetelmä ei riitä, vaan komentorivityökalujen täytyy pystyä tunnistautumaan tunnistautumispalvelussa ilman selainta.
+
+Käyttäjän tunnistaminen ei riitä yksinään, vaan valitun ratkaisun täytyy tukea myös käyttäjään liittyvien parametrien välitystä. Tämä on tärkeää, koska järjestelmässä on eri tasoisia käyttäjiä ja tunnistautumispalvelua käyttävän sovelluksen täytyy tietää mihin käyttäjäryhmään tunnistettu käyttäjä kuuluu. Myös muita käyttäjään liittyviä attribuutteja, kuten sähköpostiosoitetta tai puhelinnumeroa, tarvitaan sovelluksissa.
+
+Ratkaisun täytyy olla myös sellainen, että nykyisten sovellusten muuttaminen käyttämään uutta tunnistautumismekanismia on helppoa. Tämä tarkoittaa, että koodiin täytyy tehdä mahdollisimman vähän muutoksia. Nykyisissä toteutuksissa on käytetty Djangon vakio-tunnistautumismekanismia, joka toimii väliohjelmakerroksessa. Toteutukseksi yritetään löytää protokolla, josta on valmis avoimen lähdekoodin Django-väliohjelmatoteutus olemassa.
