@@ -7,13 +7,10 @@ Tunnistautumisessa on kolme osapuolta: asiakasohjelma, web-palvelu ja tunnistaut
 \label{composition}
 \end{figure}
 
-Kuvassa \ref{oauth} on tunnistautumisprotokollien sekvenssikaavio, jossa on kuvattu vaiheet käyttäjän kirjautuessa web-palveluun. Ensimmäiseksi käyttäjä menee asiakasohjelmalla web-palveluun, joka pyytää tunnistautumista erillisessä tunnistautumispalvelussa. Käyttäjän asiakasohjelma ohjataan tunnistautumispalvelun sivulle, joka on yhteydessä organisaation käyttäjähallintaan. Jos käyttäjähallinnasta löytyvät käyttäjän syöttämät tunnistetiedot, palautetaan käyttäjälle valtuutusavain, jonka käyttäjä lähettää takaisin web-palvelulle \cite{nisti}. Tämän jälkeen web-palvelu varmistaa tunnistautumispalvelulta valtuutusavaimen oikeellisuuden ja tunnistautumispalvelu palauttaa käyttäjän tiedot web-palvelulle.
+Ensimmäiseksi käyttäjä menee asiakasohjelmalla web-palveluun, joka pyytää tunnistautumista erillisessä tunnistautumispalvelussa. Käyttäjän asiakasohjelma ohjataan tunnistautumispalvelun sivulle, joka on yhteydessä organisaation käyttäjähallintaan. Käytetystä rajapintaprotokollasta riippuen käyttäjälle joko palautetaan todistus siitä, että hän on se jonka väittääkin olevansa tai avain, jonka avulla web-palvelu voi hakea käyttäjän tiedot tunnistautumispalvelulta.
 
-Useimmat tunnistautumisen vaiheet tapahtuvat käyttäjältä näkymättömissä selaimen uudelleenohjauksella. Käyttäjälle näkyvät vaiheet ovat 4 ja 5, joissa käyttäjältä pyydetään käyttäjätunnus ja salasana sekä varmistetaan tietojen lähetys web-palveluun. Käyttäjän syötettä vaativat vaiheet on esitetty aiemmassa kuvassa \ref{facebook_login}.
+Tunnistautumisprotokollia (kuten SAML, OpenID) käytettäessä käyttäjälle palautetaan valtuutustieto, joka on tunnistautumispalvelun allekirjoittama. Tämä valtuutustieto vahvistaa käyttäjän identiteetiksi sen, joka hän väittää olevansa \cite{nisti}.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth]{teknologiat/protokollat/oauth.eps}
-\caption{Tunnistautuminen sekvenssikaaviona.}%
-\label{oauth}
-\end{figure}
+Pääsynhallintaprotokollien (esim. OAuth) kohdalla käytetään ns. näennäistunnistautumista (pseudo authentication) \cite{distributed_web_security}. Tällöin web-palvelu voi hakea valtuutusavaimella käyttäjän tiedot tunnistautumispalvelusta. Käyttäjän identiteettiä ei siis suoraan varmenneta väitetyksi, mutta koska käyttäjällä on hallussaan avain, jolla pääsee hänen tietoihin käsiksi, oletetaan käyttäjän olevan se, jonka tiedot avaimella saadaan.
+
+Useimmat tunnistautumisen vaiheet tapahtuvat käyttäjältä näkymättömissä selaimen uudelleenohjauksella. Käyttäjälle näkyvä vaihe on kirjautuminen tunnistautumispalvelulle, jolloin käyttäjältä pyydetään käyttäjätunnus ja salasana. Käyttäjän syötettä vaativat vaiheet on esitetty aiemmassa kuvassa \ref{facebook_login}.

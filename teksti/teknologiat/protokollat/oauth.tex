@@ -5,3 +5,10 @@ OAuth on avoin pääsynvalvontaprotokolla hajautetuille web-sovelluksille. Se ma
 Valtuutusavaimelle voidaan asettaa erilaisia rajoituksia esimerkiksi sen suhteen mitä tietoja käyttäjästä näytetään web-palveluun tai mihin resursseihin kyseisellä avaimella pääsee käsiksi. Kuvassa \ref{facebook_login} kirjautumisen yhteydessä Porkkanamafialle annetaan oikeus nähdä käyttäjän nimi, profiilikuva, sukupuoli jne. OAuth ei siis ole varsinaisesti tunnistautumisprotokolla, mutta valtuutusavaimen perusteella käyttäjä voidaan yksilöidä: kun käyttäjä kirjautuu myöhemmin uudestaan Porkkanamafiaan, hän hakee valtuutusavaimen Facebookilta, jota käyttämällä Porkkanamafia hakee Facebookista käyttäjän tiedot. Käyttäjän tiedoissa mukana olevalla Facebookin yksilöivällä tunnistenumerolla käyttäjä voidaan todeta samaksi kuin edellisellä kirjautumiskerralla.
 
 OAuth on määritelty RFC-dokumentissa numero 5849. Sen ensimmäinen versio (1.0) julkaistiin lokakuussa 2007 ja päivitetty versio (1.0a) kesäkuussa 2009 \cite{oauth2_0}. OAuthin versio 2.0 on myös kehitteillä ja se on tarkoitus julkaista marraskuussa 2012 \cite{oauth2_0}. OAuthin 2.0-version kehitys on ollut vaikeuksissa, lähinnä sen jatkuvasti kasvaneiden ominaisuusvaatimusten takia. Heinäkuussa 2012 pitkään protokollan parissa työskennellyt Eran Hammer jätti OAuthin 2.0 määrittelytyön, koska hänen mukaansa protokollasta on version 1.0a jälkeen peruuttamattomasti tullut liian monimutkainen, vaikeasti käytettävä ja turvaton \cite{oauth_ragequit}. OAuth 2.0 on kuitenkin käytössä useissa palveluissa, kuten Facebookissa ja GitHubissa, koska 1.0a:n ominaisuudet eivät ole riittäneet niille.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{teknologiat/protokollat/oauth.eps}
+\caption{Tunnistautuminen sekvenssikaaviona.}%
+\label{oauth}
+\end{figure}
