@@ -5,21 +5,21 @@
 %% The original source files were:
 %%
 %% tktl.dtx  (with options: `tktl')
-%% 
+%%
 %% This is a generated file.
-%% 
+%%
 %% Copyright (C) 2002 Mikael Puolakka.
-%% 
+%%
 %% This file may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either
 %% version 1.2 of this license or (at your option) any later
 %% version. The latest version of this license is in
-%% 
+%%
 %%    http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% and version 1.2 or later is part of all distributions of
 %% LaTeX version 1999/12/01 or later.
-%% 
+%%
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -36,14 +36,14 @@
 %%   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %%   Right brace   \}     Tilde         \~}
  % BibTeX-bibliografiatyyli `tktl'
-    % versio 1.0  BibTeX-versiolle 0.99c ja myˆhemmille ja
+    % versio 1.0  BibTeX-versiolle 0.99c ja my√∂hemmille ja
     %   LaTeX-versiolle 2e.
     % Copyright (C) 2002 Mikael Puolakka.
-    % T‰m‰ bibliografiatyylitiedosto tarvitsee tiedostot
+    % T√§m√§ bibliografiatyylitiedosto tarvitsee tiedostot
     %   babelbst.tex, finnbst.tex, englbst.tex ja swedbst.tex,
-    %   jotka sis‰lt‰v‰t sanakomentojen, kuten \bbleditor, jne.,
-    %   m‰‰ritelm‰t.
-    % T‰m‰ tiedosto on modifioitu tiedostosta
+    %   jotka sis√§lt√§v√§t sanakomentojen, kuten \bbleditor, jne.,
+    %   m√§√§ritelm√§t.
+    % T√§m√§ tiedosto on modifioitu tiedostosta
  % BibTeX standard bibliography style `alpha'
     % version 0.99a for BibTeX versions 0.99a or later, LaTeX version 2.09.
     % Copyright (C) 1985, all rights reserved.
@@ -1872,6 +1872,6 @@ EXECUTE {end.bib}
 %%
 %%
 %% End of file `tktl.bst'.
-%% 
+%%
 %%
 %% End of file `tktl.bst'.
