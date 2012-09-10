@@ -1,3 +1,7 @@
-Pääsynvalvonta ei ole kovin triviaali juttu. Kuitenkin jotain vakavamielistä pohdintaa, miten ratkaisua voisi laajentaa siihen suuntaan.
+Esitetyssä arkkitehtuurissa OAuth-protokollaa käytetään tunnistautumisen toteuttamiseen, mutta sen käyttöä voidaan laajentaa muuhunkin pääsynvalvontaan. Käyttö on varsin perusteltua, sillä OAuth on nimenomaan pääsynvalvontaprotokolla ja tunnistautumisen toteuttaminen sitä käyttäen on vain yksi esimerkki käyttömahdollisuuksista. Tunnistautumispalvelua voidaan laajentaa myös suojaamaan muita Kapsin järjestelmissä käytettäviä resursseja.
 
-Käytännössä jonkunlainen pääsynvalvonta tulee, sillä auth.kapsi.fi tarkistaa onko käyttäjällä oikeus käyttää Sikteeriä tms ja palauttaa käyttäjän tiedot vain jos näin on.
+Jäsenen tiedot voivat olla yksi resurssi, joiden käyttöä valvotaan auth.kapsi.fi-palvelun kautta. Tällöin Sikteeri saisi käyttäjänhallinnasta tiedot vain, jos käyttäjällä olisi esittää pääsyvaltuutus, joka oikeuttaa tietojen hakemiseen (TODO: uusiksi tuo). Tällöin Sikteeri ei olisi suoraan yhteydessä käyttäjätietokantaan, vaan arkkitehtuuriin tulisi uusi palvelu, joka mahdollistaa käyttäjien hakemisen, lisäämisen, muokkaamisen tai poistamisen, jos pyyntöä tekevällä henkilöllä on esittää vaadittava pääsyvaltuutus. Pääsyvaltuutuksia hallinnoisi tunnistautumispalvelu. TODO: piirrä kuva ja avaa ajatusta
+
+OAuth-protokolla tukee xx flowta, joka on esitetty kuvassa \ref{oauth_lolflow}. Siinä käyttäjä tekee ensin x, sitten y ja lopuksi z.
+
+Arkkitehtuurin laajentaminen koskemaan myös pääsynvalvontaa veisi sitä entistä enemmän kohti palveluperusteista arkkitehtuuria, jossa jokaisella komponentilla on yksi tehtävä, jonka ne suorittavat hyvin \cite{soa}. Sikteeri olisi siinä tapauksessa käyttöliittymä komponentille, joka hallinnoi käyttäjiä.
