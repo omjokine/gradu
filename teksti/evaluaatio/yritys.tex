@@ -1,1 +1,7 @@
-asdf
+TODO: tähän on tosi vaikea löytää mitään viitteitä
+
+Yritysten intranet-järjestelmät muistuttavat usein Kapsin arkkitehtuuria: järjestelmässä on erilaisia web-palveluita, joihin kirjaudutaan sisäisellä käyttäjätunnuksella. Keskitetyn tunnistautumispalvelun tuominen tällaiseen järjestelmään on perusteltua samoista syistä kuin Kapsin tapauksessa.
+
+Usein yrityksissä ei toteuteta web-palveluita itse, vaan käytetään valmiita ratkaisuja. Tällöin keskitetyn tunnistautumispalvelun teknologiavalinnat täytyy tehdä ympäristön mukaan. Esimerkiksi jos intranet-palvelu on rakennettu Microsoftin SharePoint-teknologialla, on tunnistautumispalvelu toteutettavissa Microsoftin teknologialla \cite{sharepoint}. Myös muilla teknologioilla toteutettuihin intranet-järjestelmiin on tarjolla kaupallisia keskitettyjä tunnistautumisratkaisuja, esimerkiksi suomalaisen Ubisecuren CustomerID \cite{ubisecure}. [TODO: maksettu mainos? joku open source tilalle?]
+
+Jos taas yrityksessä tuotetaan intranetin palveluita itse, voi oman tunnistautumispalvelun toteuttaminen Kapsin tapaan olla perusteltua. Usein omien palveluiden lisäksi järjestelmässä käytetään muiden tuottamia palveluita esimerkiksi sähköpostia varten. Tällöin kannattaa selvittää teknologioiden yhteensopivuus valmiiden palveluiden kanssa, jolloin esimerkiksi SAML voi osoittautua OAuthia paremmaksi ratkaisuksi tunnistautumisen rajapintaprotokollaksi.
