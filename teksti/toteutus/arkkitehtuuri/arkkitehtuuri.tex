@@ -1,0 +1,8 @@
+Tekninen toteutus jakautuu kahteen osaan, nykyiseen Sikteeriin sekä uuteen tunnistautumispalveluun. Tunnistautumispalvelua varten Sikteeristä irrotetaan LDAP-tunnistautumiseen liittyvät osat ja niistä tehdään oma palvelunsa, joka tarjoaa ainakin OAuth-rajapinnan. Sikteeriä taas muutetaan niin, että se käyttää tuota tunnistautumispalvelua rajapinnan kautta.
+
+Seuraavassa aliluvussa käydään läpi Sikteerin nykyistä arkkitehtuuria ja siihen vaadittavia muutoksia, jotta sitä voidaan käyttää yhdessä ulkoisen tunnistautumispalvelun kanssa. Tämän jälkeen määritellään uuden tunnistautumispalvelun toiminta ja hahmotellaan sen arkkitehtuuria.
+
+\subsubsection{Sikteeri}
+\input{toteutus/arkkitehtuuri/sikteeri}
+\subsubsection{Tunnistautumispalvelu (auth.kapsi.fi)}
+\input{toteutus/arkkitehtuuri/auth_kapsi_fi}
