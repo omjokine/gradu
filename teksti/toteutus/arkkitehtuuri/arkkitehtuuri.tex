@@ -1,10 +1,6 @@
-Tekninen toteutus jakautuu kahteen osaan, nykyiseen Sikteeriin sekä uuteen tunnistautumispalveluun. Tunnistautumispalvelua varten Sikteeristä irrotetaan LDAP-tunnistautumiseen liittyvät osat ja niistä tehdään oma palvelunsa, joka tarjoaa ainakin OAuth-rajapinnan. Sikteeriä taas muutetaan niin, että se käyttää tuota tunnistautumispalvelua rajapinnan kautta.
+Palveluun tehtävät muutokset jakautuvat kahteen osaan: Sikteeriin tehtäviin muutoksiin ja uuteen keskitettyyn tunnistautumispalveluun. Muutoksien jälkeen Sikteeri ei käytä omaa käyttäjähallintaa tunnistamiseen, vaan tunnistaminen tapahtuu keskitetyssä tunnistautumispalvelussa, joka käyttää hyväkseen Kapsin LDAP-käyttäjähallintaa.
 
-Seuraavassa aliluvussa käydään läpi Sikteerin nykyistä arkkitehtuuria ja siihen vaadittavia muutoksia, jotta sitä voidaan käyttää yhdessä ulkoisen tunnistautumispalvelun kanssa. Tämän jälkeen määritellään uuden tunnistautumispalvelun toiminta ja hahmotellaan sen arkkitehtuuria.
-
-Ensimmäisessä vaiheessa Sikteerin omaan kantaan on tallennettu lista käyttäjätunnuksista, joilla on pääsy järjestelmään.
-
-Toteutukseen valitulle OAuth-protokollalle on olemassa valmis avoimen lähdekoodin Django-väliohjelmatoteutus.
+Seuraavissa aliluvuissa käydään ensin läpi Sikteeriin vaadittavia muutoksia, jotta sitä voidaan käyttää yhdessä ulkoisen tunnistautumispalvelun kanssa. Tämän jälkeen määritellään uuden tunnistautumispalvelun toiminta ja hahmotellaan sen arkkitehtuuri.
 
 \subsubsection{Sikteeri}
 \input{toteutus/arkkitehtuuri/sikteeri}
