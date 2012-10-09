@@ -2,6 +2,10 @@ Tekninen toteutus jakautuu kahteen osaan, nykyiseen Sikteeriin sekä uuteen tunn
 
 Seuraavassa aliluvussa käydään läpi Sikteerin nykyistä arkkitehtuuria ja siihen vaadittavia muutoksia, jotta sitä voidaan käyttää yhdessä ulkoisen tunnistautumispalvelun kanssa. Tämän jälkeen määritellään uuden tunnistautumispalvelun toiminta ja hahmotellaan sen arkkitehtuuria.
 
+Ensimmäisessä vaiheessa Sikteerin omaan kantaan on tallennettu lista käyttäjätunnuksista, joilla on pääsy järjestelmään.
+
+Toteutukseen valitulle OAuth-protokollalle on olemassa valmis avoimen lähdekoodin Django-väliohjelmatoteutus.
+
 \subsubsection{Sikteeri}
 \input{toteutus/arkkitehtuuri/sikteeri}
 \subsubsection{Tunnistautumispalvelu (auth.kapsi.fi)}
