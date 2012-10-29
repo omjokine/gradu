@@ -1,4 +1,4 @@
-Sikteeri on Kapsi ry:n laskutuksen ja jäsenhallinnan tarpeisiin kehitetty web-palvelu. Sen lisäksi yhdistyksellä on käytössä erillinen komentorivityökalu, nimeltä admtool, jolla voidaan tehdä erilaisia jäseniin liittyviä ylläpitotehtäviä (mm. tunnuksen luonti ja poisto). Näitä työkaluja käyttävät Kapsi ry:n tekninen ylläpito, hallituksen jäsenet ja toimihenkilöt.
+Sikteeri on Kapsi ry:n laskutuksen ja jäsenhallinnan tarpeisiin kehitetty web-sovellus. Sen lisäksi yhdistyksellä on käytössä erillinen komentorivityökalu, nimeltä admtool, jolla voidaan tehdä erilaisia jäseniin liittyviä ylläpitotehtäviä (mm. tunnuksen luonti ja poisto). Näitä työkaluja käyttävät Kapsi ry:n tekninen ylläpito, hallituksen jäsenet ja toimihenkilöt.
 
 Ylläpidon työkalujen nykyinen arkkitehtuuri on kuvattu kuvassa \ref{kapsi_nykyinen}. Sekä Sikteeri että admtool käyttävät ulkoisena komponenttina LDAP-käyt\-tä\-jä\-tie\-to\-kan\-taa, josta tarkistetaan, onko käyttäjällä oikeus käyttää palvelua. Sikteeri ei käytä LDAP-tietokantaa suoraan, vaan sillä on oma SQL-muotoinen käyttäjätietokanta, johon käyttäjätiedot synkronoidaan LDAP:sta. Admtool on taas suoraan yhteydessä LDAP-tietokantaan.
 
